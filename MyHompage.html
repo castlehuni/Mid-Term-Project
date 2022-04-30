@@ -28,6 +28,32 @@
     </style>
 </head>
 <body>
+    <script> //ninth commit
+        function show1(){
+            document.getElementById("playerpicture1").src = "homepagepicture/Jung.jpg";
+        }
+        function disappear1(){
+            document.getElementById("playerpicture1").src ="";
+        }
+        function show2(){
+            document.getElementById("playerpicture2").src = "homepagepicture/Leeso.jpg";
+        }
+        function disappear2(){
+            document.getElementById("playerpicture2").src ="";
+        }
+        function show3(){
+            document.getElementById("playerpicture3").src = "homepagepicture/Son.jpg";
+        }
+        function disappear3(){
+            document.getElementById("playerpicture3").src ="";
+        }
+        function show4(){
+            document.getElementById("playerpicture4").src = "homepagepicture/faker.jpg";
+        }
+        function disappear4(){
+            document.getElementById("playerpicture4").src ="";
+        }
+    </script>
     <h1>자기 소개 홈페이지</h1> <!--first commit-->
     <hr>
     <h4> 안녕하세요 저는 단국대학교에서 소프트웨어학과에 재학중인 32182661 
@@ -125,7 +151,7 @@
     이처럼 ISFJ의 특징을 알아보았습니다.<br><br>
 <h3 id = "MyFavoiteMovieAndDrama">3. 취미 중 영화와 드라마 보기의 세부 정보</h3> <!--fourth commit-->
 이 chapter는 제가 가장 좋아하는 영화와 드라마를 말하고 그 이유를 말하는 부분입니다.<br><br>
-<table id = "tableforHarry">
+<table id = "tableforHarry"> <!--eighth commit-->
     <caption><strong>해리포터 포스터와 예고편</strong></caption>
     <thead>
         <tr><th>해리포터 포스터</th><th>해리포터 예고편</th></tr>
@@ -150,7 +176,7 @@
     우정과 협동심을 느낄 수 있었고 자식의 대한 부모의 사랑, 그리고 변치 않은 사랑 등 여러 가지 감정들을 느낄 수 있었을 뿐만 아니라
     다양한 마법들과 고블린이나 도깨비 집요정 등 서로 다른 종족이 나와서 이야기를 만들어 가는 부분이 좋았기 때문에 해리포터를 좋아합니다.<br>
 </p><br>
-<table id = "tableforSignal">
+<table id = "tableforSignal"> <!--eighth commit-->
     <caption><strong>시그널 포스터와 6분 하이라이트</strong></caption>
     <thead>
         <tr><th>시그널 포스터</th><th>시그널 6분 하이라이트</th></tr>
@@ -185,11 +211,11 @@
         </li><br>
         <li>
             나의 사춘기에게를 좋아하는 이유: <br> 이 노래는 전주 부분부터 정말 좋고 이 노래도 힘들었던 시기에 더 열심히 살게 할 수 있도록 하는 노래이고
-            또한 가사를 들어보면 정말 한 번쯤 고민해봤을 내용이고 또 공감이 정말 가는 노래여서 이 노래를 좋아합니다. 
+            또한 가사를 들어보면 청소년기에 한 번쯤은 정말 고민해봤을 내용이고 또 공감이 정말 가는 노래여서 이 노래를 좋아합니다. 
         </li><br>
     </ul>
 </p>
-<table id = "favoritesong">
+<table id = "favoritesong"> <!--eighth commit-->
     <caption><strong>가장 좋아하는 노래들의 무대 영상</strong></caption>
     <thead>
         <tr><th>그래, 우리 함께 영상</th><th>나의 사춘기에게 영상</th></tr>
@@ -213,24 +239,28 @@
 <table id="tableforteam">
     <caption><strong>내가 응원하는 스포츠 팀</strong></caption>
     <thead>
-        <tr><th>종목</th><th>팀 이름</th><th>팀 마크</th><th>팀 별 좋아하는 선수</th><th>팀 별 홈페이지URL</th></tr>
+        <tr><th>종목</th><th>팀 이름</th><th>팀 마크</th><th>팀 별 좋아하는 선수</th><th>좋아하는 선수 사진<br>(선수 이름에 마우스를 올리면 선수 사진이 나옵니다.)</th><th>팀 별 홈페이지URL</th></tr>
     </thead>
     <tbody>
         <tr>
-            <td>야구</td><td>한화이글스</td><td><img src = "homepagepicture/HanhwaEmblem.jpg" width = "100" height = "100", alt="hanhwalogo"></td>
-            <td>정은원 선수</td><td><a href = "https://www.hanwhaeagles.co.kr">한화이글스 팀 홈페이지</a></td>
+            <td>야구</td><td>한화이글스</td><td><img src = "homepagepicture/HanhwaEmblem.jpg" width = "200" height = "200", alt="hanhwalogo"></td>
+            <td onmouseover = "show1()" onmouseout = "disappear1()">정은원 선수</td><td><img id = "playerpicture1" src = "" width = "200" height = "200" 
+                alt = "정은원 선수 사진"></td><td><a href = "https://www.hanwhaeagles.co.kr">한화이글스 팀 홈페이지</a></td>
         </tr> 
         <tr>
-            <td>배구(여자)</td><td>KGC인삼공사</td><td><img src = "homepagepicture/배구_앰블럼.jpg" width = "100" height = "100", alt="KGCVlogo"></td>
-            <td>이소영 선수</td><td><a href = "https://www.kgcsports.com/volleyball/main/main.php">KGC인삼공사 팀 홈페이지</a></td>
+            <td>배구(여자)</td><td>KGC인삼공사</td><td><img src = "homepagepicture/배구_앰블럼.jpg" width = "200" height = "200", alt="KGCVlogo"></td>
+            <td onmouseover = "show2()" onmouseout = "disappear2()">이소영 선수</td><td><img id = "playerpicture2" src = "" width = "200" height = "200" 
+                alt = "이소영 선수 사진"></td><td><a href = "https://www.kgcsports.com/volleyball/main/main.php">KGC인삼공사 팀 홈페이지</a></td>
         </tr>
         <tr>
-            <td>축구</td><td>토트넘 훗스퍼<br>(Tottenham Hotspur)</td><td><img src = "homepagepicture/tottenhamlogo.JPG" width = "100" height = "100", alt="tottenhamlogo">
-            </td><td>손흥민 선수</td><td><a href = "https://www.tottenhamhotspur.com/kr/">토트넘 팀 홈페이지(한국)</a></td>
+            <td>축구</td><td>토트넘 훗스퍼<br>(Tottenham Hotspur)</td><td><img src = "homepagepicture/tottenhamlogo.JPG" width = "200" height = "200", alt="tottenhamlogo"></td>
+            <td onmouseover = "show3()" onmouseout = "disappear3()">손흥민 선수</td><td><img id = "playerpicture3" src = "" width = "200" height = "200" 
+                alt = "손흥민 선수 사진"><td><a href = "https://www.tottenhamhotspur.com/kr/">토트넘 팀 홈페이지(한국)</a></td>
         </tr>
         <tr>
-            <td>E-sport(LOL)</td><td>T1<br>(SK sports)</td><td><img src = "homepagepicture/SKT1logo.JPG" width = "100" height = "100", alt="T1logo"></td>
-            <td>Faker 선수<br>(본명 이상혁)</td><td><a href = "https://t1.gg/teams/league-of-legends">T1 팀 홈페이지</a></td>
+            <td>E-sport(LOL)</td><td>T1<br>(SK sports)</td><td><img src = "homepagepicture/SKT1logo.JPG" width = "200" height = "200", alt="T1logo"></td>
+            <td onmouseover = "show4()" onmouseout = "disappear4()">Faker 선수<br>(본명 이상혁)</td><td><img id = "playerpicture4" src = "" width = "200" height = "200" 
+                alt = "Faker 선수 사진"><td><a href = "https://t1.gg/teams/league-of-legends">T1 팀 홈페이지</a></td>
         </tr>          
     </tbody>
 </table>
