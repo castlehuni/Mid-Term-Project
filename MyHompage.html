@@ -9,13 +9,20 @@
         h1{text-align: center;}
         b{color:red;}
         #MyISFJ{text-align: center;}
-        #Harry{text-align: center;}
-        #drama_signal{text-align: center;}
-        #tableforteam{border: 1px solid black; border-collapse: collapse;} /*for sports team table*/
+        #tableforHarry{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;} /*for HarryPotter table*/
+        #tableforHarry td, th{text-align:center; border: 1px solid black;}
+        #tableforHarry thead{background: lightgray;}
+        #tableforSignal{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;}/*for Signal Drama table*/ 
+        #tableforSignal td, th{text-align:center; border: 1px solid black;}
+        #tableforSignal thead{background: lightgray;}
+        #favoritesong{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;}/*for favorite song table*/ 
+        #favoritesong td, th{text-align:center; border: 1px solid black;}
+        #favoritesong thead{background: lightgray;}
+        #tableforteam{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;} /*for sports team table*/
         #tableforteam thead{background: gray; color: white; height: 50px;}
         #tableforteam tbody tr:nth-child(even){background: lightcyan;}
         #tableforteam td, th{text-align:center; border: 1px solid black;}
-        #tablefortrip{border: 1px solid black; border-collapse: collapse;}/*for trip place table*/
+        #tablefortrip{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;}/*for trip place table*/
         #tablefortrip td, th{text-align:center; border: 1px solid black; height: 50px}
         #tablefortrip thead{background: lightgray;}
     </style>
@@ -69,7 +76,7 @@
        밑의 사진은 대전의 휘장과 슬로건 그리고 마스코트입니다.
     </p>
     <table>
-        <caption>대전의 휘장과 슬로건 그리고 마스코트</caption>
+        <caption><strong>대전의 휘장과 슬로건 그리고 마스코트</strong></caption>
         <tbody>
             <tr>
                 <td>
@@ -117,21 +124,49 @@
     </ul>
     이처럼 ISFJ의 특징을 알아보았습니다.<br><br>
 <h3 id = "MyFavoiteMovieAndDrama">3. 취미 중 영화와 드라마 보기의 세부 정보</h3> <!--fourth commit-->
-이 chapter는 제가 가장 좋아하는 영화와 드라마를 말하고 그 이유를 말하는 부분입니다.<br>
-<div id="Harry">
-    <img src = "https://movie-phinf.pstatic.net/20181019_236/1539926790655oHv5z_JPEG/movie_image.jpg?type=m665_443_2" width = "250"
-        height = "300", alt = "HarryPotter">
-</div>
+이 chapter는 제가 가장 좋아하는 영화와 드라마를 말하고 그 이유를 말하는 부분입니다.<br><br>
+<table id = "tableforHarry">
+    <caption><strong>해리포터 포스터와 예고편</strong></caption>
+    <thead>
+        <tr><th>해리포터 포스터</th><th>해리포터 예고편</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <img src = "https://movie-phinf.pstatic.net/20181019_236/1539926790655oHv5z_JPEG/movie_image.jpg?type=m665_443_2" 
+                   width = "250" height = "315", alt = "HarryPotter">
+            </td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PIcdDw6tdGs" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+            </td>
+        </tr>
+    </tbody>
+</table>  
 <p>
     제가 가장 좋아하는 영화는 <b>해리포터 시리즈</b>입니다.<br>
     해리포터 시리즈를 가장 좋아하는 이유는 우선 제가 판타지 영화를 좋아하고 또 즐겨 보는데 그 중에서도 제가 생각하기엔 해리포터에서 마법을 
     사용할 때 나오는 이펙트들이 화려해서 제 마음에 끌렸고 또 해리포터, 론 그리고 헤르미온느가 서로 도우면서 위협을 헤쳐나가는 모습에서
     우정과 협동심을 느낄 수 있었고 자식의 대한 부모의 사랑, 그리고 변치 않은 사랑 등 여러 가지 감정들을 느낄 수 있었을 뿐만 아니라
     다양한 마법들과 고블린이나 도깨비 집요정 등 서로 다른 종족이 나와서 이야기를 만들어 가는 부분이 좋았기 때문에 해리포터를 좋아합니다.<br>
-</p>
-<div id="drama_signal">
-    <img src = "homepagepicture/favoritedrama.jpg" height = "300" width = "250" alt = "DramaSignal">
-</div>
+</p><br>
+<table id = "tableforSignal">
+    <caption><strong>시그널 포스터와 6분 하이라이트</strong></caption>
+    <thead>
+        <tr><th>시그널 포스터</th><th>시그널 6분 하이라이트</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <img src = "homepagepicture/favoritedrama.jpg" height = "315" width = "250" alt = "DramaSignal">
+            </td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JnX9ctyNrAI" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+            </td>
+        </tr>
+    </tbody>
+</table>
 <p>
     제가 가장 좋아하는 드라마는 2016년 tvN에서 방영했던 드라마 <b>시그널</b>입니다.<br>
     드라마 시그널을 가장 좋아하는 이유는 무전기를 통해 과거와 미래를 연결해 사건을 해결한다는 설정 자체가 정말 새로웠고 화성 연쇄 살인 사건이나 밀양 집단 성폭행 사건 등 실제 우리나라에서
@@ -154,11 +189,29 @@
         </li><br>
     </ul>
 </p>
+<table id = "favoritesong">
+    <caption><strong>가장 좋아하는 노래들의 무대 영상</strong></caption>
+    <thead>
+        <tr><th>그래, 우리 함께 영상</th><th>나의 사춘기에게 영상</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kaBpVkZxGpI" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qtT2p6FGZX8" title="YouTube video player" frameborder="0" allow="accelerometer;
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+    </tbody>
+</table>
 지금까지 제가 좋아하는 노래에 대해 소개하였습니다.<br><br>
 <h3 id = "MyFavoiteSportsTeam">5. 취미 중 스포츠 경기 보기의 세부 정보</h3> <!--sixth commit-->
 이 chapter는 제가 응원하는 스포츠 팀을 표를 통해 보여주는 부분입니다.<br><br>
 <table id="tableforteam">
-    <caption>내가 응원하는 스포츠 팀</caption>
+    <caption><strong>내가 응원하는 스포츠 팀</strong></caption>
     <thead>
         <tr><th>종목</th><th>팀 이름</th><th>팀 마크</th><th>팀 별 좋아하는 선수</th><th>팀 별 홈페이지URL</th></tr>
     </thead>
@@ -202,9 +255,9 @@
         </ol>        
     </li>
 </ul><br>
-<strong>밑의 사진은 기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진이다.</strong><br><br> 
+<strong>밑의 사진은 기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진입니다.</strong><br><br> 
 <table id="tablefortrip">
-    <caption>기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진</caption>
+    <caption><strong>기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진</strong></caption>
     <thead>
         <tr><th>부산</th><th>경주</th><th>발리</th></tr>
     </thead>
@@ -229,6 +282,6 @@
     </tfoot>
 </table><br>
 이상으로 저의 기억에 남는 여행지에 대해 설명했습니다.<br><br>
+
 </body>
 </html>
-
