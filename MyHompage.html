@@ -6,9 +6,13 @@
     <meta name="author" content="오성훈">
     <title>Introduce_Oh_Seong_Hun</title>
     <style>
+        body{background-color: aliceblue;}
         h1{text-align: center;}
         b{color:red;}
         #MyISFJ{text-align: center;}
+        #tableforhometown{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;} /*for HarryPotter table*/
+        #tableforhometown td, th{text-align:center; border: 1px solid black;}
+        #tableforhometown thead{background: lightgray; height: 50px;}
         #tableforHarry{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;} /*for HarryPotter table*/
         #tableforHarry td, th{text-align:center; border: 1px solid black;}
         #tableforHarry thead{background: lightgray;}
@@ -25,6 +29,7 @@
         #tablefortrip{margin-left: auto; margin-right: auto; border: 1px solid black; border-collapse: collapse;}/*for trip place table*/
         #tablefortrip td, th{text-align:center; border: 1px solid black; height: 50px}
         #tablefortrip thead{background: lightgray;}
+        #myfavoitepoem{background-color: lightyellow; color:blueviolet;}
     </style>
 </head>
 <body>
@@ -54,264 +59,309 @@
             document.getElementById("playerpicture4").src ="";
         }
     </script>
-    <h1>자기 소개 홈페이지</h1> <!--first commit-->
-    <hr>
-    <h4> 안녕하세요 저는 단국대학교에서 소프트웨어학과에 재학중인 32182661 
-        오성훈이라고 합니다.<br> 이 홈페이지는 오픈소스SW활용의 중간고사 
-        대체 과제인 자기 소개 홈페이지입니다.<br>
-        이 홈페이지는 자기 소개를 리스트로 표현하고 각각의 정보들을 추가해서
-        작성했습니다.
-    </h4><br>
-    <h2>자기 소개 리스트</h2>
-    <img src = "homepagepicture/myselfpic.jpg" width = 450
-        height = 400 alt="mypicture">
-    <ul>
-        <li>이름: 오성훈</li>
-        <li>생년월일: 1999년 11월 11일(한국 나이 24세, 만 22세)</li>
-        <li>고향: <a href="#hometown">대전광역시</a></li>
-        <li>가족 관계: 아빠, 엄마, (여)동생</li>
-        <li>성격: 내성적이고 화가 많은 편</li>
-        <li>MBTI: <a href="#MyMBTI">ISFJ</a></li>
-        <li>내가 생각하는 나의 장점: 어떤 일을 해야 하면 최대한 노력해서 하는 편이다.</li>
-        <li>내가 생각하는 나의 단점: 쉽게 포기하는 편이다</li>
-        <li>취미:
-            <ol type="A">
-                <li><a href = "#MyFavoiteMovieAndDrama">영화, 드라마 보기</a></li>
-                <li><a href = "#MyFavoiteMusic">노래 듣기</a></li>
-                <li><a href = "#MyFavoiteSportsTeam">스포츠 경기 보기</a></li>
-                <li><a href = "#MyFavoiteTripPlace">여행다니기</a></li>
-            </ol>
-        </li>
-        <li>좋아하는 음식: 치킨, 피자</li>
-    </ul><br>
-    <h2>자기 소개에 대한 구체적 정보</h2><br><!--second commit-->
-    <h3 id="hometown"> 1. 고향에 관한 구체적 정보</h3>
-    저의 고향은 위에서도 보았듯이 대전이고 대전에 대한 간단한 소개를 하는
-    chapter입니다.
-    <p><b>대전</b>은 충청도에 위치하고 있고 한문으로는 &quot;大田&#34;로 표기합니다.<br>
-       대전의 인구수는 1,450,057명이고 광역시로 들어갑니다.<br>
-       남한을 기준으로는 가장 가운데 위치하기 때문에 <b>교통의 중심지</b>이고<br>
-       대중교통은 버스, 그리고 지하철 1호선이 있습니다.(2호선은 트램으로 계획중)<br>
-       그리고 대덕 연구 단지와 같은 <b>과학과 연구의 중심 지역</b>이고 KAIST가 있습니다.<br>
-       또한 요새는 넷플릭스 드라마의 후반부 CG작업을 이곳에서 많이 합니다.<br>
-       대전의 가볼만한 곳은(정말 없지만) 구도심지인 <b>은행동과 으능정이거리, 유성 지역,
-       그리고 한밭수목원, 오월드</b> 등이 있습니다.<br>
-       대전의 유명한 것은 <b>성심당(튀김소보로), 칼국수, 꿈돌이, 신세계 백화점</b> 등이 있습니다.<br>
-       대전 연고 스포츠 팀은 <b>야구: 한화이글스, 축구: 대전시티즌, 배구: 삼성화재 블루팡스(남자), 
-       KGC인삼공사(여자)</b>등이 있습니다.<br>
-       밑의 사진은 대전의 휘장과 슬로건 그리고 마스코트입니다.
-    </p>
-    <table>
-        <caption><strong>대전의 휘장과 슬로건 그리고 마스코트</strong></caption>
-        <tbody>
-            <tr>
-                <td>
-                    <img src = "homepagepicture/daejeon.jpg" height = "150" 
-                        width = "150" alt = "Daejeon">
-                </td>
-                <td>
-                    <img src = "https://www.daejeon.go.kr/images/drh/sub07/disu_img01.png"
-                        height = "150" width = "300" alt = "Deajeonslogon"> 
-                </td>
-                <td>
-                    <img src = "https://www.daejeon.go.kr/images/drh/sub06/character_main.png"
-                        height = "150" width = "150" alt = "hanggumi&ggumdoli">
-                </td>
-            </tr>
-        </tbody>
-    </table><br>
-    <h3 id="MyMBTI"> 2. 본인 MBTI 소개</h3> <!--third commit-->
-    저의 MBTI는 꽤 여러 번 했는데도 거의 대부분 ISFJ가 나왔습니다.<br>
-    그래서 저의 MBTI인 ISFJ에 대해 알아보면
-    <div id="MyISFJ">
-        <img src = "homepagepicture/MBTI.jpg" height = "300" width = "250"
-            alt = "ISFJ">
-    </div>
-    <p>
-    ISFJ는 I(내향형) vs E(외향형) 중 내향형인 I와 S(감각형) vs N(직관형) 중 감각형인 S와
-    T(사고형) vs F(감정형) 중 감정형인 F 그리고 J(판단형) vs P(인식형) 중 판단형인 J로
-    로 되어있습니다.<br> ISFJ 성격 특징에 대해 알아보면    
-    </p>
-    <ul>
-        <li> ISFJ 특징<br><br>
+    <header> <!--tenth commit -> department header, section ,article, footer-->
+        <h1>자기 소개 홈페이지</h1> <!--first commit-->
+        <hr>
+        <h4> 안녕하세요 저는 단국대학교에서 소프트웨어학과에 재학중인 32182661 
+            오성훈이라고 합니다.<br> 이 홈페이지는 오픈소스SW활용의 중간고사 
+            대체 과제인 자기 소개 홈페이지입니다.<br>
+            이 홈페이지는 자기 소개를 리스트로 표현하고 각각의 정보들을 추가해서
+            작성했습니다.
+        </h4><br>
+        <h2>자기 소개 리스트</h2>
+        <img src = "homepagepicture/myselfpic.jpg" width = 450 height = 400 alt="mypicture">
+        <ul>
+            <li>이름: 오성훈</li>
+            <li>생년월일: 1999년 11월 11일(한국 나이 24세, 만 22세)</li>
+            <li>고향: 대전광역시</li>
+            <li>가족 관계: 아빠, 엄마, (여)동생</li>
+            <li>성격: 내성적이고 화가 많은 편</li>
+            <li>MBTI: ISFJ</li>
+            <li>내가 생각하는 나의 장점: 어떤 일을 해야 하면 최대한 노력해서 하는 편이다.</li>
+            <li>내가 생각하는 나의 단점: 쉽게 포기하는 편이다</li>
+            <li>취미:
+                <ol type="A">
+                    <li>영화, 드라마 보기</li>
+                    <li>노래 듣기</li>
+                    <li>스포츠 경기 보기</li>
+                    <li>여행다니기</li>
+                </ol>
+            </li>
+            <li>좋아하는 음식: 치킨, 피자</li>
+        </ul><br>
+    </header>
+    <nav>
+        <h2><strong>자기 소개에 대한 구체적 정보</strong></h2>
+        <ul>
+            <li>자기 소개에 대한 구체적 정보를 표현하는 순서
+                <ol>
+                    <li><a href="#hometown">고향에 대한 구체적 정보</a></li>
+                    <li><a href="#MyMBTI">본인 MBTI 소개</a></li>
+                    <li><a href = "#MyFavoiteMovieAndDrama">취미 중 영화와 드라마 보기의 세부 정보</a></li>
+                    <li><a href = "#MyFavoiteMusic">취미 중 노래 듣기의 세부 정보</a></li>
+                    <li><a href = "#MyFavoiteSportsTeam">취미 중 스포츠 경기 보기의 세부 정보</a></li>
+                    <li><a href = "#MyFavoiteTripPlace">취미 중 여행 다니기의 세부 정보</a></li>
+                </ol>
+            </li>
+        </ul><br>
+    </nav>
+    <section>
+        <article>
+            <h3 id="hometown"> 1. 고향에 관한 구체적 정보</h3><!--second commit-->
+            저의 고향은 위에서도 보았듯이 대전이고 대전에 대한 간단한 소개를 하는
+            chapter입니다.
+            <p>
+                <b>대전</b>은 충청도에 위치하고 있고 한문으로는 &quot;大田&#34;로 표기합니다.<br>
+                대전의 인구수는 1,450,057명이고 광역시로 들어갑니다.<br>
+                남한을 기준으로는 가장 가운데 위치하기 때문에 <b>교통의 중심지</b>이고<br>
+                대중교통은 버스, 그리고 지하철 1호선이 있습니다.(2호선은 트램으로 계획중)<br>
+                그리고 대덕 연구 단지와 같은 <b>과학과 연구의 중심 지역</b>이고 KAIST가 있습니다.<br>
+                또한 요새는 넷플릭스 드라마의 후반부 CG작업을 이곳에서 많이 합니다.<br>
+                대전의 가볼만한 곳은(정말 없지만) 구도심지인 <b>은행동과 으능정이거리, 유성 지역,
+                그리고 한밭수목원, 오월드</b> 등이 있습니다.<br>
+                대전의 유명한 것은 <b>성심당(튀김소보로), 칼국수, 꿈돌이, 신세계 백화점</b> 등이 있습니다.<br>
+                대전 연고 스포츠 팀은 <b>야구: 한화이글스, 축구: 대전시티즌, 배구: 삼성화재 블루팡스(남자), 
+                KGC인삼공사(여자)</b>등이 있습니다.<br>
+                밑의 사진은 대전의 휘장과 슬로건 그리고 마스코트입니다.
+            </p>
+            <table id = "tableforhometown">
+                <caption><strong>대전의 휘장과 슬로건 그리고 마스코트</strong></caption>
+                <thead>
+                    <tr><th>대전의 휘장</th><th>대전의 슬로건</th><th>대전의 마스코트</th></tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src = "homepagepicture/daejeon.jpg" height = "200" width = "200" alt = "Daejeon">
+                        </td>
+                        <td>
+                            <img src = "https://www.daejeon.go.kr/images/drh/sub07/disu_img01.png" 
+                                height = "200" width = "400" alt = "Deajeonslogon"> 
+                        </td>
+                        <td>
+                            <img src = "https://www.daejeon.go.kr/images/drh/sub06/character_main.png"
+                                height = "200" width = "200" alt = "hanggumi&ggumdoli">
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br>
+        </article>
+        <article>
+            <h3 id="MyMBTI"> 2. 본인 MBTI 소개</h3> <!--third commit-->
+            저의 MBTI는 꽤 여러 번 했는데도 거의 대부분 ISFJ가 나왔습니다.<br>
+            그래서 저의 MBTI인 ISFJ에 대해 알아보면
+            <div id="MyISFJ">
+                <img src = "homepagepicture/MBTI.jpg" height = "300" width = "250"
+                    alt = "ISFJ">
+            </div>
+            <p>
+                ISFJ는 I(내향형) vs E(외향형) 중 내향형인 I와 S(감각형) vs N(직관형) 중 감각형인 S와
+                T(사고형) vs F(감정형) 중 감정형인 F 그리고 J(판단형) vs P(인식형) 중 판단형인 J로
+                로 되어있습니다.<br> ISFJ 성격 특징에 대해 알아보면    
+            </p>
+            <ul>
+                <li> ISFJ 특징<br><br>
+                    <ul>
+                        <li>원칙주의자이자 게으른 완벽주의자</li><br>
+                        <li>남 눈치를 많이 보지만 남을 챙기는 것을 좋아함</li><br>
+                        <li>외로움을 많이 타지만 많은 사람이 있는 것을 싫어함</li><br>
+                        <li>조 짜서 하는 단체활동 안 좋아함</li><br>
+                        <li>남이 볼 땐 재미없는 삶 but 본인은 만족하는 삶</li><br> 
+                        <li>배려심 많고 공감을 잘해준다 하지만 인간관계에 스트레스를 많이 받음</li><br> 
+                        <li>성격이 온화해서 하자는 거는 다 해 줌</li><br> 
+                        <li>어쩔 땐 내향적이고 어쩔땐 외향적임</li><br>
+                        <li>계획 세우는 거 좋아하고 메모하고 기억함</li><br>
+                        <li>ISFJ 연예인: 비욘세, 빈 디젤, 소녀시대 태연, ITZY 예지 등</li><br>      
+                    </ul>
+                </li>
+            </ul>
+            이처럼 ISFJ의 특징을 알아보았습니다.<br><br>
+        </article>
+        <article>
+            <h3 id = "MyFavoiteMovieAndDrama">3. 취미 중 영화와 드라마 보기의 세부 정보</h3> <!--fourth commit-->
+            이 chapter는 제가 가장 좋아하는 영화와 드라마를 말하고 그 이유를 말하는 부분입니다.<br><br>
+            <table id = "tableforHarry"> <!--eighth commit-->
+                <caption><strong>해리포터 포스터와 예고편</strong></caption>
+                <thead>
+                    <tr><th>해리포터 포스터</th><th>해리포터 예고편</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src = "https://movie-phinf.pstatic.net/20181019_236/1539926790655oHv5z_JPEG/movie_image.jpg?type=m665_443_2" 
+                                width = "250" height = "315", alt = "HarryPotter">
+                        </td>
+                        <td>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PIcdDw6tdGs" title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                제가 가장 좋아하는 영화는 <b>해리포터 시리즈</b>입니다.<br>
+                해리포터 시리즈를 가장 좋아하는 이유는 우선 제가 판타지 영화를 좋아하고 또 즐겨 보는데 그 중에서도 제가 생각하기엔 해리포터에서 마법을 
+                사용할 때 나오는 이펙트들이 화려해서 제 마음에 끌렸고 또 해리포터, 론 그리고 헤르미온느가 서로 도우면서 위협을 헤쳐나가는 모습에서
+                우정과 협동심을 느낄 수 있었고 자식의 대한 부모의 사랑, 그리고 변치 않은 사랑 등 여러 가지 감정들을 느낄 수 있었을 뿐만 아니라
+                다양한 마법들과 고블린이나 도깨비 집요정 등 서로 다른 종족이 나와서 이야기를 만들어 가는 부분이 좋았기 때문에 해리포터를 좋아합니다.<br>
+            </p><br>
+            <table id = "tableforSignal"> <!--eighth commit-->
+                <caption><strong>시그널 포스터와 6분 하이라이트</strong></caption>
+                <thead>
+                    <tr><th>시그널 포스터</th><th>시그널 6분 하이라이트</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src = "homepagepicture/favoritedrama.jpg" height = "315" width = "250" alt = "DramaSignal">
+                        </td>
+                        <td>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JnX9ctyNrAI" title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                제가 가장 좋아하는 드라마는 2016년 tvN에서 방영했던 드라마 <b>시그널</b>입니다.<br>
+                드라마 시그널을 가장 좋아하는 이유는 무전기를 통해 과거와 미래를 연결해 사건을 해결한다는 설정 자체가 정말 새로웠고 화성 연쇄 살인 사건이나 밀양 집단 성폭행 사건 등 실제 우리나라에서
+                발생한 사건을 다루어서 그 사건에 대해 다시 한 번 생각하게 되는 계기를 마련하였고 항상 범죄를 볼 때 그 사건에만 치중해서 보았는데 이 드라마에서는 등장인물이 그 사건의 연관되어 있어 
+                가해자나 피해자 뿐만 아니라 관련된 주변 인물들에 대해서도 다시 한 번 생각해보게 되는 계기가 되었고 그 곳에서 나오는 대사들이 제 마음을 울리는 것이 많아서 가장 좋아하는 드라마입니다.  
+            </p>
+            이와 같이 제가 가장 좋아하는 영화와 드라마에 대해 알아보았습니다.<br><br>
+        </article>
+        <article>
+            <h3 id = "MyFavoiteMusic">4. 취미 중 노래 듣기의 세부 정보</h3> <!--fifth commit-->
+            이 chapter는 제가 가장 좋아하는 노래를 소개하는 부분입니다.<br>
+            <p>
+                우선 제가 가장 좋아하는 노래는 '무한도전'이라는 프로그램의 가요제에서 나온 '그래, 우리 함께'라는 곡이랑 볼빨간 사춘기의 '나의 사춘기에게'라는 노래를 좋아합니다.<br> 
                 <ul>
-                    <li>원칙주의자이자 게으른 완벽주의자</li><br>
-                    <li>남 눈치를 많이 보지만 남을 챙기는 것을 좋아함</li><br>
-                    <li>외로움을 많이 타지만 많은 사람이 있는 것을 싫어함</li><br>
-                    <li>조 짜서 하는 단체활동 안 좋아함</li><br>
-                    <li>남이 볼 땐 재미없는 삶 but 본인은 만족하는 삶</li><br> 
-                    <li>배려심 많고 공감을 잘해준다 하지만 인간관계에 스트레스를 많이 받음</li><br> 
-                    <li>성격이 온화해서 하자는 거는 다 해 줌</li><br> 
-                    <li>어쩔 땐 내향적이고 어쩔땐 외향적임</li><br>
-                    <li>계획 세우는 거 좋아하고 메모하고 기억함</li><br>
-                    <li>ISFJ 연예인: 비욘세, 빈 디젤, 소녀시대 태연, ITZY 예지 등</li><br>      
+                    <li>
+                        그래, 우리 함께를 좋아하는 이유: <br>제가 가장 힘들었다고 느꼈던 고3 시절에 이 노래를 들으면서 큰 힘을 받았습니다.
+                        특히 이 노래에 나오는 "그래, 괜찮아 잘해온 거야 그 힘겨운 하루 버티며 살아낸 거야, 지지마 지켜왔던 꿈들 이게 전부는 아닐 거야 웃는 날 꼭 올 거야"
+                        라는 가사 부분이 저에게 참 큰 힘이 되었고 좀 더 열심히 할 수 있는 생각이 들게 하였습니다. 그래서 이 노래를 가장 좋아합니다.
+                    </li><br>
+                    <li>
+                        나의 사춘기에게를 좋아하는 이유: <br> 이 노래는 전주 부분부터 정말 좋고 이 노래도 힘들었던 시기에 더 열심히 살게 할 수 있도록 하는 노래이고
+                        또한 가사를 들어보면 청소년기에 한 번쯤은 정말 고민해봤을 내용이고 또 공감이 정말 가는 노래여서 이 노래를 좋아합니다. 
+                    </li><br>
                 </ul>
-        </li>
-    </ul>
-    이처럼 ISFJ의 특징을 알아보았습니다.<br><br>
-<h3 id = "MyFavoiteMovieAndDrama">3. 취미 중 영화와 드라마 보기의 세부 정보</h3> <!--fourth commit-->
-이 chapter는 제가 가장 좋아하는 영화와 드라마를 말하고 그 이유를 말하는 부분입니다.<br><br>
-<table id = "tableforHarry"> <!--eighth commit-->
-    <caption><strong>해리포터 포스터와 예고편</strong></caption>
-    <thead>
-        <tr><th>해리포터 포스터</th><th>해리포터 예고편</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <img src = "https://movie-phinf.pstatic.net/20181019_236/1539926790655oHv5z_JPEG/movie_image.jpg?type=m665_443_2" 
-                   width = "250" height = "315", alt = "HarryPotter">
-            </td>
-            <td>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PIcdDw6tdGs" title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-            </td>
-        </tr>
-    </tbody>
-</table>  
-<p>
-    제가 가장 좋아하는 영화는 <b>해리포터 시리즈</b>입니다.<br>
-    해리포터 시리즈를 가장 좋아하는 이유는 우선 제가 판타지 영화를 좋아하고 또 즐겨 보는데 그 중에서도 제가 생각하기엔 해리포터에서 마법을 
-    사용할 때 나오는 이펙트들이 화려해서 제 마음에 끌렸고 또 해리포터, 론 그리고 헤르미온느가 서로 도우면서 위협을 헤쳐나가는 모습에서
-    우정과 협동심을 느낄 수 있었고 자식의 대한 부모의 사랑, 그리고 변치 않은 사랑 등 여러 가지 감정들을 느낄 수 있었을 뿐만 아니라
-    다양한 마법들과 고블린이나 도깨비 집요정 등 서로 다른 종족이 나와서 이야기를 만들어 가는 부분이 좋았기 때문에 해리포터를 좋아합니다.<br>
-</p><br>
-<table id = "tableforSignal"> <!--eighth commit-->
-    <caption><strong>시그널 포스터와 6분 하이라이트</strong></caption>
-    <thead>
-        <tr><th>시그널 포스터</th><th>시그널 6분 하이라이트</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <img src = "homepagepicture/favoritedrama.jpg" height = "315" width = "250" alt = "DramaSignal">
-            </td>
-            <td>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JnX9ctyNrAI" title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-            </td>
-        </tr>
-    </tbody>
-</table>
-<p>
-    제가 가장 좋아하는 드라마는 2016년 tvN에서 방영했던 드라마 <b>시그널</b>입니다.<br>
-    드라마 시그널을 가장 좋아하는 이유는 무전기를 통해 과거와 미래를 연결해 사건을 해결한다는 설정 자체가 정말 새로웠고 화성 연쇄 살인 사건이나 밀양 집단 성폭행 사건 등 실제 우리나라에서
-    발생한 사건을 다루어서 그 사건에 대해 다시 한 번 생각하게 되는 계기를 마련하였고 항상 범죄를 볼 때 그 사건에만 치중해서 보았는데 이 드라마에서는 등장인물이 그 사건의 연관되어 있어 
-    가해자나 피해자 뿐만 아니라 관련된 주변 인물들에 대해서도 다시 한 번 생각해보게 되는 계기가 되었고 그 곳에서 나오는 대사들이 제 마음을 울리는 것이 많아서 가장 좋아하는 드라마입니다.  
-</p>
-이와 같이 제가 가장 좋아하는 영화와 드라마에 대해 알아보았습니다.<br><br>
-<h3 id = "MyFavoiteMusic">4. 취미 중 노래 듣기의 세부 정보</h3> <!--fifth commit-->
-이 chapter는 제가 가장 좋아하는 노래를 소개하는 부분입니다.<br>
-<p>
-    우선 제가 가장 좋아하는 노래는 '무한도전'이라는 프로그램의 가요제에서 나온 '그래, 우리 함께'라는 곡이랑 볼빨간 사춘기의 '나의 사춘기에게'라는 노래를 좋아합니다.<br> 
-    <ul>
-        <li>그래, 우리 함께를 좋아하는 이유: <br>제가 가장 힘들었다고 느꼈던 고3 시절에 이 노래를 들으면서 큰 힘을 받았습니다.
-            특히 이 노래에 나오는 "그래, 괜찮아 잘해온 거야 그 힘겨운 하루 버티며 살아낸 거야, 지지마 지켜왔던 꿈들 이게 전부는 아닐 거야 웃는 날 꼭 올 거야"
-            라는 가사 부분이 저에게 참 큰 힘이 되었고 좀 더 열심히 할 수 있는 생각이 들게 하였습니다. 그래서 이 노래를 가장 좋아합니다.
-        </li><br>
-        <li>
-            나의 사춘기에게를 좋아하는 이유: <br> 이 노래는 전주 부분부터 정말 좋고 이 노래도 힘들었던 시기에 더 열심히 살게 할 수 있도록 하는 노래이고
-            또한 가사를 들어보면 청소년기에 한 번쯤은 정말 고민해봤을 내용이고 또 공감이 정말 가는 노래여서 이 노래를 좋아합니다. 
-        </li><br>
-    </ul>
-</p>
-<table id = "favoritesong"> <!--eighth commit-->
-    <caption><strong>가장 좋아하는 노래들의 무대 영상</strong></caption>
-    <thead>
-        <tr><th>그래, 우리 함께 영상</th><th>나의 사춘기에게 영상</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kaBpVkZxGpI" title="YouTube video player" frameborder="0" allow="accelerometer; 
-                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qtT2p6FGZX8" title="YouTube video player" frameborder="0" allow="accelerometer;
-                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-        </tr>
-    </tbody>
-</table>
-지금까지 제가 좋아하는 노래에 대해 소개하였습니다.<br><br>
-<h3 id = "MyFavoiteSportsTeam">5. 취미 중 스포츠 경기 보기의 세부 정보</h3> <!--sixth commit-->
-이 chapter는 제가 응원하는 스포츠 팀을 표를 통해 보여주는 부분입니다.<br><br>
-<table id="tableforteam">
-    <caption><strong>내가 응원하는 스포츠 팀</strong></caption>
-    <thead>
-        <tr><th>종목</th><th>팀 이름</th><th>팀 마크</th><th>팀 별 좋아하는 선수</th><th>좋아하는 선수 사진<br>(선수 이름에 마우스를 올리면 선수 사진이 나옵니다.)</th><th>팀 별 홈페이지URL</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>야구</td><td>한화이글스</td><td><img src = "homepagepicture/HanhwaEmblem.jpg" width = "200" height = "200", alt="hanhwalogo"></td>
-            <td onmouseover = "show1()" onmouseout = "disappear1()">정은원 선수</td><td><img id = "playerpicture1" src = "" width = "200" height = "200" 
-                alt = "정은원 선수 사진"></td><td><a href = "https://www.hanwhaeagles.co.kr">한화이글스 팀 홈페이지</a></td>
-        </tr> 
-        <tr>
-            <td>배구(여자)</td><td>KGC인삼공사</td><td><img src = "homepagepicture/배구_앰블럼.jpg" width = "200" height = "200", alt="KGCVlogo"></td>
-            <td onmouseover = "show2()" onmouseout = "disappear2()">이소영 선수</td><td><img id = "playerpicture2" src = "" width = "200" height = "200" 
-                alt = "이소영 선수 사진"></td><td><a href = "https://www.kgcsports.com/volleyball/main/main.php">KGC인삼공사 팀 홈페이지</a></td>
-        </tr>
-        <tr>
-            <td>축구</td><td>토트넘 훗스퍼<br>(Tottenham Hotspur)</td><td><img src = "homepagepicture/tottenhamlogo.JPG" width = "200" height = "200", alt="tottenhamlogo"></td>
-            <td onmouseover = "show3()" onmouseout = "disappear3()">손흥민 선수</td><td><img id = "playerpicture3" src = "" width = "200" height = "200" 
-                alt = "손흥민 선수 사진"><td><a href = "https://www.tottenhamhotspur.com/kr/">토트넘 팀 홈페이지(한국)</a></td>
-        </tr>
-        <tr>
-            <td>E-sport(LOL)</td><td>T1<br>(SK sports)</td><td><img src = "homepagepicture/SKT1logo.JPG" width = "200" height = "200", alt="T1logo"></td>
-            <td onmouseover = "show4()" onmouseout = "disappear4()">Faker 선수<br>(본명 이상혁)</td><td><img id = "playerpicture4" src = "" width = "200" height = "200" 
-                alt = "Faker 선수 사진"><td><a href = "https://t1.gg/teams/league-of-legends">T1 팀 홈페이지</a></td>
-        </tr>          
-    </tbody>
-</table>
-여기까지 제가 응원하는 팀을 표를 통해 보여드렸습니다.<br>사실 거의 대부분이 연고지여서 응원하는 팀이어서 가끔씩 응원하면서 화도 많이 나지만 그래도 응원하는 모든 팀들이 잘됐으면
-합니다.<br><br> 
-<h3 id = "MyFavoiteTripPlace">6. 취미 중 여행 다니기의 세부 정보</h3> <!--seventh commit-->
-이 chapter는 제가 갔던 여행지 중에 기억에 남는 여행지 중 3군데를 정해서 왜 기억에 남는지를 언급하고 그 여행지 중에 좋았다고 생각하는 곳의 사진을 보이는 부분입니다. 
-<ul>
-    <li>기억에 남는 여행지<br><br>
-        <ol type = "1">
-            <li><strong>부산</strong>: 부산이 좋았다고 생각하는 이유는 우선 제가 처음으로 혼자 여행을 갔던 곳이기도 하였고 그곳에서 힘들기도 하였지만 부산의 아름다운 바다를 보면서
-                산책을 다양한 부산 음식(돼지 국밥, 씨앗 호떡)들을 맛 볼 수 있었고 부산의 아름다운 야경과 또 영도다리가 열리는 모습 그리고 아름다운 집들도 함께 볼 수 있어서 기억에 
-                남는다. 
-            </li><br>
-            <li><strong>경주</strong>: 경주는 우선 수학여행 때 가봤기 때문에 별로 다르지 않을 것이라 생각했지만 황리단길 같이 수학여행 때는 느끼지 못했던 새로운 경주의 모습과 
-                또 신라의 다양한 문화재 그리고 경주의 아름다운 바다와 수학 여행때는 보지 못한 안압지의 멋진 야경을 볼 수 있어 새로운 느낌이 들어 기억에 남는다. 
-            </li><br>
-            <li><strong>발리(인도네시아)</strong>: 발리는 우선 세계적으로 유명한 휴양지이기 때문에 정말 기대를 많이 하고 갔는데 그 명성의 맞게 정말 에메랄드 빛의 바다를 볼 수 있었고
-                날씨가 굉장히 더웠기 때문에 조금 힘들기는 했지만 여러 다양한 인도네시아의 문화재들을 볼 수 있었고 또한 인도네시아의 시장들을 둘러 볼 수 있었고 또한 날씨가 정말 좋았기
-                때문에 정말 아름다운 풍경을 볼 수 있었어 기억에 남는 것 같다.
-            </li>  
-        </ol>        
-    </li>
-</ul><br>
-<strong>밑의 사진은 기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진입니다.</strong><br><br> 
-<table id="tablefortrip">
-    <caption><strong>기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진</strong></caption>
-    <thead>
-        <tr><th>부산</th><th>경주</th><th>발리</th></tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <img src = "homepagepicture/Busan.jpg" height = "300" 
-                    width = "300" alt = "busanpicture">
-            </td>
-            <td>
-                <img src = "homepagepicture/Kyungju.jpg"
-                    height = "300" width = "300" alt = "kyungjupicture"> 
-            </td>
-            <td>
-                <img src = "homepagepicture/Bali.jpg"
-                    height = "300" width = "300" alt = "balipicture">
-            </td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr><th>부산 중 용궁사 풍경</th><th>경주 중 동궁과 월지(안압지) 야경</th><th>발리 풍경</th></tr>
-    </tfoot>
-</table><br>
-이상으로 저의 기억에 남는 여행지에 대해 설명했습니다.<br><br>
-
+            </p>
+            <table id = "favoritesong"> <!--eighth commit-->
+                <caption><strong>가장 좋아하는 노래들의 무대 영상</strong></caption>
+                <thead>
+                    <tr><th>그래, 우리 함께 영상</th><th>나의 사춘기에게 영상</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kaBpVkZxGpI" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qtT2p6FGZX8" title="YouTube video player" frameborder="0" allow="accelerometer;
+                                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            지금까지 제가 좋아하는 노래에 대해 소개하였습니다.<br><br>
+        </article>
+        <article>
+            <h3 id = "MyFavoiteSportsTeam">5. 취미 중 스포츠 경기 보기의 세부 정보</h3> <!--sixth commit-->
+            이 chapter는 제가 응원하는 스포츠 팀을 표를 통해 보여주는 부분입니다.<br><br>
+            <table id="tableforteam">
+                <caption><strong>내가 응원하는 스포츠 팀</strong></caption>
+                <thead>
+                    <tr><th>종목</th><th>팀 이름</th><th>팀 마크</th><th>팀 별 좋아하는 선수</th><th>좋아하는 선수 사진<br>(선수 이름에 마우스를 올리면 선수 사진이 나옵니다.)</th><th>팀 별 홈페이지URL</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>야구</td><td>한화이글스</td><td><img src = "homepagepicture/HanhwaEmblem.jpg" width = "200" height = "200", alt="hanhwalogo"></td>
+                        <td onmouseover = "show1()" onmouseout = "disappear1()">정은원 선수</td><td><img id = "playerpicture1" src = "" width = "200" height = "200" 
+                            alt = "정은원 선수 사진"></td><td><a href = "https://www.hanwhaeagles.co.kr">한화이글스 팀 홈페이지</a></td>
+                    </tr> 
+                    <tr>
+                        <td>배구(여자)</td><td>KGC인삼공사</td><td><img src = "homepagepicture/배구_앰블럼.jpg" width = "200" height = "200", alt="KGCVlogo"></td>
+                        <td onmouseover = "show2()" onmouseout = "disappear2()">이소영 선수</td><td><img id = "playerpicture2" src = "" width = "200" height = "200" 
+                            alt = "이소영 선수 사진"></td><td><a href = "https://www.kgcsports.com/volleyball/main/main.php">KGC인삼공사 팀 홈페이지</a></td>
+                    </tr>
+                    <tr>
+                        <td>축구</td><td>토트넘 훗스퍼<br>(Tottenham Hotspur)</td><td><img src = "homepagepicture/tottenhamlogo.JPG" width = "200" height = "200", alt="tottenhamlogo"></td>
+                        <td onmouseover = "show3()" onmouseout = "disappear3()">손흥민 선수</td><td><img id = "playerpicture3" src = "" width = "200" height = "200" 
+                            alt = "손흥민 선수 사진"><td><a href = "https://www.tottenhamhotspur.com/kr/">토트넘 팀 홈페이지(한국)</a></td>
+                    </tr>
+                    <tr>
+                        <td>E-sport(LOL)</td><td>T1<br>(SK sports)</td><td><img src = "homepagepicture/SKT1logo.JPG" width = "200" height = "200", alt="T1logo"></td>
+                        <td onmouseover = "show4()" onmouseout = "disappear4()">Faker 선수<br>(본명 이상혁)</td><td><img id = "playerpicture4" src = "" width = "200" height = "200" 
+                            alt = "Faker 선수 사진"><td><a href = "https://t1.gg/teams/league-of-legends">T1 팀 홈페이지</a></td>
+                    </tr>          
+                </tbody>
+            </table>
+            여기까지 제가 응원하는 팀을 표를 통해 보여드렸습니다.<br>사실 거의 대부분이 연고지여서 응원하는 팀이어서 가끔씩 응원하면서 화도 많이 나지만 그래도 응원하는 모든 팀들이 잘됐으면
+            합니다.<br><br>
+        </article>
+        <article>
+            <h3 id = "MyFavoiteTripPlace">6. 취미 중 여행 다니기의 세부 정보</h3> <!--seventh commit-->
+            이 chapter는 제가 갔던 여행지 중에 기억에 남는 여행지 중 3군데를 정해서 왜 기억에 남는지를 언급하고 그 여행지 중에 좋았다고 생각하는 곳의 사진을 보이는 부분입니다. 
+            <ul>
+                <li>기억에 남는 여행지<br><br>
+                    <ol type = "1">
+                        <li><strong>부산</strong>: 부산이 좋았다고 생각하는 이유는 우선 제가 처음으로 혼자 여행을 갔던 곳이기도 하였고 그곳에서 힘들기도 하였지만 부산의 아름다운 바다를 보면서
+                            산책을 다양한 부산 음식(돼지 국밥, 씨앗 호떡)들을 맛 볼 수 있었고 부산의 아름다운 야경과 또 영도다리가 열리는 모습 그리고 아름다운 집들도 함께 볼 수 있어서 기억에 
+                            남는다. 
+                        </li><br>
+                        <li><strong>경주</strong>: 경주는 우선 수학여행 때 가봤기 때문에 별로 다르지 않을 것이라 생각했지만 황리단길 같이 수학여행 때는 느끼지 못했던 새로운 경주의 모습과 
+                            또 신라의 다양한 문화재 그리고 경주의 아름다운 바다와 수학 여행때는 보지 못한 안압지의 멋진 야경을 볼 수 있어 새로운 느낌이 들어 기억에 남는다. 
+                        </li><br>
+                        <li><strong>발리(인도네시아)</strong>: 발리는 우선 세계적으로 유명한 휴양지이기 때문에 정말 기대를 많이 하고 갔는데 그 명성의 맞게 정말 에메랄드 빛의 바다를 볼 수 있었고
+                            날씨가 굉장히 더웠기 때문에 조금 힘들기는 했지만 여러 다양한 인도네시아의 문화재들을 볼 수 있었고 또한 인도네시아의 시장들을 둘러 볼 수 있었고 또한 날씨가 정말 좋았기
+                            때문에 정말 아름다운 풍경을 볼 수 있었어 기억에 남는 것 같다.
+                        </li>  
+                    </ol>        
+                </li>
+            </ul><br>
+            <strong>밑의 사진은 기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진입니다.</strong><br><br> 
+            <table id="tablefortrip">
+                <caption><strong>기억에 남는 여행지 중에 좋았다고 생각하는 곳의 사진</strong></caption>
+                <thead>
+                    <tr><th>부산</th><th>경주</th><th>발리</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src = "homepagepicture/Busan.jpg" height = "300" width = "300" alt = "busanpicture">
+                        </td>
+                        <td>
+                            <img src = "homepagepicture/Kyungju.jpg" height = "300" width = "300" alt = "kyungjupicture"> 
+                        </td>
+                        <td>
+                            <img src = "homepagepicture/Bali.jpg" height = "300" width = "300" alt = "balipicture">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr><th>부산 중 용궁사 풍경</th><th>경주 중 동궁과 월지(안압지) 야경</th><th>발리 풍경</th></tr>
+                </tfoot>
+            </table><br>
+            이상으로 저의 기억에 남는 여행지에 대해 설명했습니다.<br><br>
+        </article>
+    </section>
+    <footer>
+    <h3><strong>가장 인상깊었던 시</strong></h3>
+        <pre id = "myfavoitepoem">
+                            풀꽃
+                                        나태주
+                    
+                    자세히 보아야 
+                    예쁘다
+                   
+                    오래 보아야 
+                    사랑스럽다
+                   
+                    너도 그렇다.
+        </pre>
+    이 시는 드라마에서 처음 들었지만 너무 인상 깊은 시여서 제가 정말 좋아하는 시입니다.<br>
+    이상으로 본인 소개 홈페이지를 마치겠습니다. 봐주셔서 감사합니다.    
+    </footer>
 </body>
 </html>
